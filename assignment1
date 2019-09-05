@@ -1,0 +1,52 @@
+#Assignment 1
+
+person1=['ALan',19,'basketball player']
+
+# 1.finding list length
+print(len(person1))
+
+# 2.Creating a list with members as lists
+person2=['Ajay',22,'baseball player']
+people=[person1,person2]
+print(people)
+
+# 3. Using the slice operator
+print(person1[1:])
+print(person2[0:1])
+
+# 4.Replacing
+person1[1]='mango'
+print(person1)
+
+# 5.Cloning
+personclone=person1[:]
+print(personclone)
+
+personclone2=[]
+personclone2.extend(person2)
+print(personclone2)
+
+listcopy=list(personclone)
+print(listcopy)
+
+# 6.Concatenating lists
+sports=['basketball','football','cricket']
+sports2=['tennis','badminton','swimming']
+sports3=sports + sports2
+print(sports3)
+
+# 7.Splitting
+def chunks(list1, chunk_size):
+    result = []
+    chunk = []
+    for item in list1:
+        chunk.append(item)
+        if len(chunk) == chunk_size:
+            result.append(chunk)
+            chunk = []
+            print(result)
+    if chunk:
+        result.append(chunk)
+    return result
+x=int(input('Enter the chunk size'))
+print(chunks([1, 2, 3, 4, 5, 6], x)) 
