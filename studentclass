@@ -1,0 +1,24 @@
+class student:
+    def __init__(self, marks=[]):
+        self.marks = marks
+
+    def accept(self):
+        self.name = str(input('Enter the name'))
+        self.age = int(input('Enter the age'))
+        self.marks = []
+        y=1
+        for _ in range(3):
+            print("Enter the marks of subject ",y)
+            x = int(input())
+            self.marks.append(x)
+            y+=1
+
+    def display(self):
+        print(self.name)
+        print(self.age)
+        print(self.marks)
+
+
+obj = student()
+obj.accept()
+obj.display()
