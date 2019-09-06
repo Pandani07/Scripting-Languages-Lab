@@ -1,0 +1,34 @@
+student={
+      20:{
+			    "name":"ANI"
+					"sport":"basketball"
+			},
+			21:{
+			   "name":"WOODS"
+					"sport":"GOLF"
+			},
+			22:{
+			"name":"BHUSHAN"
+					"sport":"TENNIS"
+			},
+			23:{
+			"name":"Amarthya"
+					"sport":"cricket"
+			},
+			24:{
+			"name":"AMIT"
+					"sport":"foottball"
+			},
+			25:{
+			"name":"GEORGE"
+					"sport":"Quidditch"
+			},
+			26:{
+			"name":"FRED"
+					"sport":"baseball"
+			}
+}
+for i in student.keys():
+    if i%2==0:
+		   print(student[i])
+			 
