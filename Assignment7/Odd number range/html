@@ -1,0 +1,32 @@
+html file:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="numbers.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+javascript file:
+
+
+function OddRange(num1,num2){
+    var arr=[];
+    var i;
+    for (i=num1;i<=num2;i++){
+        if(i%2!==0){
+            arr.push(i);
+        }
+    }
+    var j;
+    for (j=0;j<arr.length;j++){
+      document.write(arr[j]+" \n");  
+    }
+}
+a=prompt("Enter the lower base");
+b=prompt("Enter the upper base");
+OddRange(a,b)
