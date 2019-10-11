@@ -1,0 +1,19 @@
+javascript file:
+
+function HourMinute(num){
+    var hours=parseInt(num/60);
+    var min=num%60;
+    document.write(hours+":"+min)
+}
+x=prompt("Enter the time minutes");
+HourMinute(x);
+
+html file:
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="hours.js"></script>
+</head>
+<body>
+</body>
+</html>
