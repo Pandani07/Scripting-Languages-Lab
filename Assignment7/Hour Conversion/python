@@ -1,0 +1,6 @@
+def HourMinute(num):
+    hours=num//60
+    min=num%60
+    print(hours,":",min)
+x=int(input("Enter the minutes"))
+HourMinute(x)
