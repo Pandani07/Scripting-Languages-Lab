@@ -1,0 +1,28 @@
+<html>
+      <head>
+            <script type="text/javascript">
+                  var obj={
+                        green:1,
+                        blue:2,
+                        red:3,
+                        yellow:4,
+                        black:5,
+                        purple:6,
+                        brown:7,
+                        white:8,
+                        grey:9,
+                        orange:10
+                  };
+                  function show(){
+                        ele=document.getElementById("name").value;
+                        sh=obj[ele];
+                        document.getElementById("res").innerHTML=sh;
+                  }
+            </script>
+      </head>
+      <body>
+            <input type="text" placeholder="enter a color name" id="name">
+            <input type="button" onclick="show()" value="colors">
+            <p id="res"></p>
+      </body>
+</html>
