@@ -2,12 +2,11 @@
 
 (under Department of ISE, Ramaiah Institute of Technology)
 
+Name         : ANIRUDH DUTT
 
-USN          : 1MS17IS034
+USN          : 1MS17IS024
 
-Name         : BANSURI J SANGANAL
-
-Section      : 5A
+Section      : V-A
 
 Submitted to : Dr. Mydhili K Nair (Faculty Coordinator)
 
