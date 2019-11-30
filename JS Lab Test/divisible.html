@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>3 or 7</title>
+        <script type="text/javascript">
+        function check(){
+            var n=document.getElementById("n").value;
+            var num=/[0-9]/;
+            var flag=true;
+            var x="";
+            for (i in n){
+                if(!num.test(n[i])){
+                    flag=false;
+                    break;
+                }
+            }
+            if(flag==false)
+                alert("Enter valid number");
+            else {
+                if(n%3==0)
+                    x+="Divisible by 3<br>";
+                if(n%7==0)
+                    x+="Divisible by 7<br>";
+                if(n%3!=0 && n%7!=0)
+                    x+="Not divisible by 3 or 7";
+                document.getElementById("res").innerHTML=x;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <form>
+            Enter number:<input type="text" id="n"/><br>
+            <input type="button" onclick="check()" value="Check"/><br>
+        </form>
+        <p id="res"></p>
+    </body>
+</html>
